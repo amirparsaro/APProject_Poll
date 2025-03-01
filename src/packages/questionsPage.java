@@ -1,17 +1,23 @@
 package packages;
 
 import javax.swing.*;
+import java.awt.*;;
 
 public class questionsPage {
 
     public void create(JFrame frame) {
         // Create and configure the panel
+
+       // we change font in this brench
         JPanel panel = new JPanel();
         panel.setBounds(0, 0, 600, 600);
         panel.setLayout(null);
 
+        Font font = new Font("Arial", Font.BOLD, 20);
+
         // Question 1
         JLabel question1 = new JLabel("چقدر رابط کاربری نرم افزار از نظر شما جذاب است؟");
+        question1.setFont(font);
         question1.setBounds(10, 10, 300, 20);
 
         JRadioButton radio1_1 = new JRadioButton("۱");
@@ -34,6 +40,7 @@ public class questionsPage {
 
         // Question 2
         JLabel question2 = new JLabel("آیا دسترسی به امکانات مختلف نرم افزار برای شما آسان است؟");
+        question2.setFont(font);
         question2.setBounds(10, 90, 300, 20);
 
 
@@ -57,6 +64,7 @@ public class questionsPage {
 
         // Question 3
         JLabel question3 = new JLabel("چقدر طراحی صفحات نرم افزار ساده و کاربرپسند است؟");
+        question3.setFont(font);
         question3.setBounds(10, 170, 300, 20);
 
         JRadioButton radio3_1 = new JRadioButton("۱");
@@ -79,6 +87,7 @@ public class questionsPage {
 
         // Question 4
         JLabel question4 = new JLabel("آیا رنگ ها و فونت های استفاده شده در نرم افزار مناسب هستند؟");
+        question4.setFont(font);
         question4.setBounds(10, 250, 350, 20);
 
         JRadioButton radio4_1 = new JRadioButton("۱");

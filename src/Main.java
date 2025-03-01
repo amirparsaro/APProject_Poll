@@ -1,3 +1,5 @@
+import java.awt.Font;
+
 import javax.swing.*;
 import packages.informationPage;
 
@@ -16,8 +18,11 @@ public class Main {
         panel.setLayout(null);
         panel.setBounds(0, 0, 600, 600);
 
+        Font font = new Font("Arial", Font.BOLD, 20);
+        
         // Create title label
         JLabel title = new JLabel("فرم نظرسنجی");
+        title.setFont(font);
         title.setBounds(10, 10, 100, 20);
 
         // Create start button

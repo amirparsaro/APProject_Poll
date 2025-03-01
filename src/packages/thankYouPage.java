@@ -1,5 +1,7 @@
 package packages;
 
+import java.awt.Font;
+
 import javax.swing.*;
 
 public class thankYouPage {
@@ -11,8 +13,11 @@ public class thankYouPage {
         panel.setLayout(null);
         panel.setBounds(0, 0, 600, 600);
 
+        Font font = new Font("Arial", Font.BOLD, 20);
+
         // Create thank you label
         JLabel thankYouLabel = new JLabel("با تشکر از مشارکت شما!");
+        thankYouLabel.setFont(font);
         thankYouLabel.setBounds(10, 10, 200, 20);
 
         // Add components to the panel
