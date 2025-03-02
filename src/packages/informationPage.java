@@ -1,8 +1,8 @@
 package packages;
 
-import java.awt.Font;
 
 import javax.swing.*;
+import java.awt.*;
 
 public class informationPage {
 
@@ -10,13 +10,13 @@ public class informationPage {
         // Create the main panel
         JPanel panel = new JPanel();
         panel.setBounds(0, 0, 600, 600);
-        panel.setLayout(null);
-
-        Font font = new Font("Arial", Font.BOLD, 20);
+        panel.setLayout(new BoxLayout(panel, BoxLayout.PAGE_AXIS));
+        panel.setBackground(new Color(227, 208, 106));
+        panel.add(Box.createRigidArea(new Dimension(280, 0)));
 
         // Name Label and Text Field
         JLabel nameLabel = new JLabel("Name");
-        nameLabel.setBounds(10, 10, 100, 20);
+        nameLabel.setAlignmentX(JLabel.CENTER_ALIGNMENT);
         JTextField nameField = new JTextField(15);
         nameField.setBounds(50, 10, 100, 20);
 
@@ -36,11 +36,11 @@ public class informationPage {
         JLabel levelLabel = new JLabel("Level of familiarity with similar software");
         levelLabel.setBounds(10, 130, 250, 20);
 
-        JRadioButton level1 = new JRadioButton("Intermediate");
+        JRadioButton level1 = new JRadioButton("Basic");
         level1.setBounds(10, 160, 100, 20);
         JRadioButton level2 = new JRadioButton("Medium");
         level2.setBounds(100, 160, 100, 20);
-        JRadioButton level3 = new JRadioButton("Advance");
+        JRadioButton level3 = new JRadioButton("Advanced");
         level3.setBounds(190, 160, 100, 20);
         JRadioButton level4 = new JRadioButton("without acquaintance");
         level4.setBounds(280, 160, 150, 20);
@@ -53,7 +53,7 @@ public class informationPage {
         group.add(level4);
 
         // Next Page Button
-        JButton nextButton = new JButton("Next Page");
+        JButton nextButton = new JButton("Next page");
         nextButton.setBounds(10, 200, 100, 20);
         nextButton.addActionListener(e -> {
             // Remove current panel and move to Page2

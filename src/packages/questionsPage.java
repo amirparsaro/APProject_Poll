@@ -1,17 +1,17 @@
 package packages;
 
 import javax.swing.*;
-import java.awt.*;;
+import java.awt.*;
 
 public class questionsPage {
 
     public void create(JFrame frame) {
         // Create and configure the panel
-
-       // we change font in this brench
         JPanel panel = new JPanel();
         panel.setBounds(0, 0, 600, 600);
-        panel.setLayout(null);
+        panel.setLayout(new BoxLayout(panel, BoxLayout.PAGE_AXIS));
+        panel.setBackground(new Color(227, 208, 106));
+        panel.add(Box.createRigidArea(new Dimension(280, 0)));
 
         Font font = new Font("Arial", Font.BOLD, 20);
 
@@ -43,15 +43,20 @@ public class questionsPage {
 
 
         JRadioButton radio2_1 = new JRadioButton("1");
-        radio2_1.setBounds(10, 120, 100, 20);
+        radio2_1.setBounds(100, 120, 100, 20);
+        radio2_1.setBackground(new Color(227, 208, 106));
         JRadioButton radio2_2 = new JRadioButton("2");
-        radio2_2.setBounds(80, 120, 100, 20);
+        radio2_2.setBounds(180, 120, 100, 20);
+        radio2_2.setBackground(new Color(227, 208, 106));
         JRadioButton radio2_3 = new JRadioButton("3");
-        radio2_3.setBounds(150, 120, 100, 20);
+        radio2_3.setBounds(260, 120, 100, 20);
+        radio2_3.setBackground(new Color(227, 208, 106));
         JRadioButton radio2_4 = new JRadioButton("4");
-        radio2_4.setBounds(220, 120, 100, 20);
+        radio2_4.setBounds(340, 120, 100, 20);
+        radio2_4.setBackground(new Color(227, 208, 106));
         JRadioButton radio2_5 = new JRadioButton("5");
-        radio2_5.setBounds(290, 120, 100, 20);
+        radio2_5.setBounds(420, 120, 100, 20);
+        radio2_5.setBackground(new Color(227, 208, 106));
 
         ButtonGroup group2 = new ButtonGroup();
         group2.add(radio2_1);
@@ -65,15 +70,20 @@ public class questionsPage {
         question3.setBounds(10, 170, 300, 20);
 
         JRadioButton radio3_1 = new JRadioButton("1");
-        radio3_1.setBounds(10, 200, 100, 20);
+        radio3_1.setBounds(100, 200, 100, 20);
+        radio3_1.setBackground(new Color(227, 208, 106));
         JRadioButton radio3_2 = new JRadioButton("2");
-        radio3_2.setBounds(80, 200, 100, 20);
+        radio3_2.setBounds(180, 200, 100, 20);
+        radio3_2.setBackground(new Color(227, 208, 106));
         JRadioButton radio3_3 = new JRadioButton("3");
-        radio3_3.setBounds(150, 200, 100, 20);
+        radio3_3.setBounds(260, 200, 100, 20);
+        radio3_3.setBackground(new Color(227, 208, 106));
         JRadioButton radio3_4 = new JRadioButton("4");
-        radio3_4.setBounds(220, 200, 100, 20);
+        radio3_4.setBounds(340, 200, 100, 20);
+        radio3_4.setBackground(new Color(227, 208, 106));
         JRadioButton radio3_5 = new JRadioButton("5");
-        radio3_5.setBounds(290, 200, 100, 20);
+        radio3_5.setBounds(420, 200, 100, 20);
+        radio3_5.setBackground(new Color(227, 208, 106));
 
         ButtonGroup group3 = new ButtonGroup();
         group3.add(radio3_1);
@@ -87,15 +97,20 @@ public class questionsPage {
         question4.setBounds(10, 250, 350, 20);
 
         JRadioButton radio4_1 = new JRadioButton("1");
-        radio4_1.setBounds(10, 280, 100, 20);
+        radio4_1.setBounds(100, 280, 100, 20);
+        radio4_1.setBackground(new Color(227, 208, 106));
         JRadioButton radio4_2 = new JRadioButton("2");
-        radio4_2.setBounds(80, 280, 100, 20);
+        radio4_2.setBounds(180, 280, 100, 20);
+        radio4_2.setBackground(new Color(227, 208, 106));
         JRadioButton radio4_3 = new JRadioButton("3");
-        radio4_3.setBounds(150, 280, 100, 20);
+        radio4_3.setBounds(260, 280, 100, 20);
+        radio4_3.setBackground(new Color(227, 208, 106));
         JRadioButton radio4_4 = new JRadioButton("4");
-        radio4_4.setBounds(220, 280, 100, 20);
+        radio4_4.setBounds(340, 280, 100, 20);
+        radio4_4.setBackground(new Color(227, 208, 106));
         JRadioButton radio4_5 = new JRadioButton("5");
-        radio4_5.setBounds(290, 280, 100, 20);
+        radio4_5.setBounds(420, 280, 100, 20);
+        radio4_5.setBackground(new Color(227, 208, 106));
 
         ButtonGroup group4 = new ButtonGroup();
         group4.add(radio4_1);
@@ -106,7 +121,11 @@ public class questionsPage {
 
         // Next button to go to Page3
         JButton nextButton = new JButton("Next Page");
-        nextButton.setBounds(10, 320, 100, 20);
+        nextButton.setBounds(250, 400, 100, 20);
+        nextButton.setBackground(new Color(223, 185, 89));
+        nextButton.setOpaque(true);
+        nextButton.setBorderPainted(false);
+        nextButton.setFocusPainted(false);
         nextButton.addActionListener(e -> {
             frame.remove(panel);
             frame.revalidate();
