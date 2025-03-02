@@ -1,5 +1,4 @@
 import javax.swing.*;
-
 import packages.informationPage;
 
 import java.awt.*;
@@ -8,7 +7,7 @@ public class Main {
 
     public static void main(String[] args) {
         // Create and configure the main frame
-        JFrame frame = new JFrame("فرم نظرسنجی");
+        JFrame frame = new JFrame("survey form");
         frame.setSize(600, 600);
         frame.setLocationRelativeTo(null);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -21,13 +20,16 @@ public class Main {
         panel.setBounds(0, 0, 600, 600);
         panel.setBackground(new Color(227, 208, 106));
 
+        Font font = new Font("Arial", Font.BOLD, 20);
+
         // Create title label
-        JLabel title = new JLabel("فرم نظرسنجی");
+        JLabel title = new JLabel("survey form");
         title.setHorizontalAlignment(SwingConstants.CENTER);
         title.setForeground(Color.DARK_GRAY);
+        title.setFont(font);
 
         // Create start button
-        JButton startButton = new JButton("شروع!");
+        JButton startButton = new JButton("start");
         startButton.setHorizontalAlignment(SwingConstants.CENTER);
         startButton.setBackground(new Color(223, 185, 89));
         startButton.setForeground(Color.DARK_GRAY);
