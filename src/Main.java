@@ -1,5 +1,8 @@
 import javax.swing.*;
+
 import packages.informationPage;
+
+import java.awt.*;
 
 public class Main {
 
@@ -10,23 +13,31 @@ public class Main {
         frame.setLocationRelativeTo(null);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(null);
+        frame.setResizable(true);
 
         // Create and configure the main panel
         JPanel panel = new JPanel();
-        panel.setLayout(null);
+        panel.setLayout(new BorderLayout());
         panel.setBounds(0, 0, 600, 600);
+        panel.setBackground(new Color(227, 208, 106));
 
         // Create title label
         JLabel title = new JLabel("فرم نظرسنجی");
-        title.setBounds(10, 10, 100, 20);
+        title.setHorizontalAlignment(SwingConstants.CENTER);
+        title.setForeground(Color.DARK_GRAY);
 
         // Create start button
         JButton startButton = new JButton("شروع!");
-        startButton.setBounds(10, 40, 100, 20);
+        startButton.setHorizontalAlignment(SwingConstants.CENTER);
+        startButton.setBackground(new Color(223, 185, 89));
+        startButton.setForeground(Color.DARK_GRAY);
+        startButton.setOpaque(true);
+        startButton.setBorderPainted(false);
+        startButton.setFocusPainted(false);
 
         // Add components to the panel
-        panel.add(title);
-        panel.add(startButton);
+        panel.add(title, BorderLayout.NORTH);
+        panel.add(startButton, BorderLayout.CENTER);
 
         // Add panel to the frame
         frame.add(panel);
