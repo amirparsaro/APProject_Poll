@@ -16,8 +16,7 @@ public class thankYouPage {
         Font font = new Font("Arial", Font.BOLD, 20);
 
         // Create thank you label
-        JLabel thankYouLabel = new JLabel("با تشکر از مشارکت شما!");
-        thankYouLabel.setFont(font);
+        JLabel thankYouLabel = new JLabel("Thanks for your participation!");
         thankYouLabel.setBounds(10, 10, 200, 20);
 
         // Add components to the panel
