@@ -15,7 +15,6 @@ public class informationPage {
 
         // Name Label and Text Field
         JLabel nameLabel = new JLabel("نام: ");
-//        nameLabel.setBounds(180, 10, 100, 20);
         nameLabel.setAlignmentX(JLabel.CENTER_ALIGNMENT);
         JTextField nameField = new JTextField(15);
         nameField.setBounds(210, 10, 200, 20);
